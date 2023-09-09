@@ -1,0 +1,24 @@
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Foqas Academy | Responsive Education Template
+* Author : Foqas
+* Author URI : http://www.foqas.org/
+* Programmer : Shihab Uddin
+* -----------------------------------------------------------------------------
+*
+**/
+@page {
+    size: a4 portrait !important;
+    margin: 0 !important;
+}
+
+@media print {
+    .table td, .table th {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+}

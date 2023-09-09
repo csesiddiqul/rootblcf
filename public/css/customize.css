@@ -1,0 +1,185 @@
+.pricing-table {
+  text-align: center;
+  background: #fff;
+  padding: 20px 0;
+  transition: all .2s ease-in-out;
+} 
+
+.pricing-table .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 15px 0;
+}
+
+.pricing-table .price-value {
+  padding: 20px 0 10px;
+  background: #4a9fd7;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.pricing-table .price-value:before {
+  content: "";
+  border-top: 15px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 46%;
+}
+
+.pricing-table .price-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.pricing-table .price {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.pricing-table .currency {
+  display: inline-block;
+  margin-bottom: 2px;
+  vertical-align: bottom;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f0f0f0;
+} 
+
+.pricing-table .pricing-content {
+  padding: 0;
+  margin: 0 0 5px 0;
+  list-style: none;
+}
+
+.pricing-table .pricing-content li {
+  font-size: 14px;
+  color: #5f6368;
+  line-height: 22px;
+  padding: 0px 5px;
+}
+
+.pricing-table .pricing-content li:nth-of-type(2n+1) {
+  background-color: #fafafa;
+}
+
+.pricing-table .pricing-table-button {
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 28px;
+  color: #333;
+  background: #fff; 
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #ecf0f1;
+  border-radius: 0px;
+  transition: all 0.5s ease 0s;
+  height: 30px;
+}
+
+.pricing-table #sslczPayBtn {
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 28px;
+  color: #333;
+  background: #fff; 
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #ecf0f1;
+  border-radius: 0px;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  height: 30px;
+  text-transform: capitalize;
+}
+.pricing-table #regbtn {  
+    background-image: none!important; 
+    border: 0; 
+    padding: 0px!important;
+    text-decoration: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+}
+.pricing-table #regbtn span {
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 28px;
+  color: #333;
+  background: #fff!important; 
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #ecf0f1;
+  border-radius: 0px;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  height: 30px;
+  text-transform: capitalize;   
+  background-image: none!important;    
+  text-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  -ms-box-shadow: none!important;
+  -o-box-shadow: none!important;
+  box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+.pricing-table #sslczPayBtn:before {
+  content: none;
+}
+.pricing-table #sslczPayBtn:after {
+  content: none;
+}
+
+.pricing-table .pricing-table-button:hover {
+  background: #000000;
+  border: 1px solid #000000;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.1s ease 0s;
+}
+a.pricing-table-button {
+  text-decoration: none;
+}
+.href {
+  text-decoration: none!important;
+}
+.odd .dataTables_empty {
+  text-align: center!important;
+  color: #c7254e;
+}
+.datepicker.dropdown-menu {
+  padding: 5px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 990px) {
+  .pricing-table {
+    margin-bottom: 5px;
+  }
+}

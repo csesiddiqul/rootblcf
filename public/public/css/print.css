@@ -1,0 +1,112 @@
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Foqas Academy | Responsive Education Template
+* Author : Foqas
+* Author URI : http://www.foqas.org/
+* Programmer : Shihab Uddin
+* -----------------------------------------------------------------------------
+*
+**/
+
+.txt-center {
+    text-align: center !important;
+}
+
+.width_line:first-child > tbody > tr:first-child > td:first-child {
+
+    width: 21% !important;
+}
+
+.list ul {
+    list-style: block !important;
+}
+
+/*.BoxA{
+    background-color: #ccc;
+}*/
+.border- {
+    border: 1px solid #000 !important;
+}
+.padding {
+    padding: 15px !important;
+}
+.padding {
+    padding: 10px !important;
+}
+.mar-bot {
+   /* margin-bottom: 15px !important;*/
+}
+
+.admit-card1 {
+    border: 2px solid #000 !important;
+    padding: 7px !important;
+   margin-top: 15px !important;
+
+}
+.admit-card2 {
+    border: 2px solid #000 !important;
+  
+   
+}
+
+/*.BoxA h5, .BoxA p {
+    margin: 0 !important;
+}
+*/
+h5 {
+    text-transform: uppercase !important;
+}
+
+table img {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.table thead th {
+    vertical-align: bottom !important;
+    border-bottom: none !important;
+}
+
+.sign {
+    border-top: 1px solid #000 !important;
+    margin-right: 70px !important;
+    width: 170px !important;
+    text-align: center !important;
+}
+.rsign {
+    border-top: 1px solid #000 !important;
+   
+    width: 170px !important;
+    text-align: center !important;
+}
+
+.signature {
+ /* margin-top: 60px !important;*/
+}
+
+.profile_image {
+    border: 1px solid #000 !important;
+    padding: 5px !important;
+}
+
+.margin {
+    margin: 0 0 5px !important;
+}
+.BoxF ul li{
+    list-style: disc !important;
+}
+.font{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.padding_bottom{
+    padding-bottom: 15px !important;
+}
+.instruction{
+    font-size: 18px !important; 
+    font-weight:600 !important;
+    color: #000 !important;
+    
+}

@@ -1,0 +1,395 @@
+<div class="box-body">
+                                <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
+                                    <label>Template Name</label><small class="req"> *</small>
+
+                                        <input type="text"  name="name"  class="form-control" id="name" value="{{ $templete->name }}" placeholder="Enter Name"  >
+
+                                     @if ($errors->has('name'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{ $errors->has('heading') ? ' has-error' : '' }}">
+                                    <label>Heading</label>
+                                    <input type="text"  name="heading" class="form-control"  id="heading" value="{{ $templete->heading }}"    >
+                                     @if ($errors->has('heading'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('heading') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+                                <div class="form-group {{ $errors->has('title') ? ' has-error' : '' }}">
+                                    <label>Title</label>
+                                    <input type="text"  name="title" class="form-control" id="title" value="{{ $templete->title }}"  >
+                                    @if ($errors->has('title'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('title') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+
+
+                                <div class="form-group {{ $errors->has('examname') ? ' has-error' : '' }}">
+                                    <label>Exam Name</label>
+                                    <input  type="text"   name="examname" class="form-control"
+                                    id="examname" value="{{ $templete->examname }}"   >
+                                     @if ($errors->has('examname'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('examname') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+                            <div class="form-group {{ $errors->has('examdate') ? ' has-error' : '' }}">
+                                <label for="examdate">Exam Date</label>
+
+                                    <input type="text" name="examdate" class="form-control" id="examdate" value="{{date('d-m-Y',strtotime($templete->examdate))}}" >
+
+                                 @if ($errors->has('examdate'))
+                                <span class="help-block">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+
+                                <div class="form-group {{ $errors->has('examcenter') ? ' has-error' : '' }}">
+                                    <label>Exam Center</label>
+                                    <input type="text"  name="examcenter" class="form-control" id="examcenter" value="{{ $templete->examcenter }}"  >
+                                      @if ($errors->has('examcenter'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('examcenter') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+                                <div class="form-group {{ $errors->has('bodyText') ? ' has-error' : '' }}">
+                                    <label for="bodyText">Body Text</label>
+                                    <textarea name="bodyText" class="form-control rounded-0 ckeditor" id="bodyText" rows="5">{{ $templete->bodyText }}</textarea>
+
+
+                                  @if ($errors->has('bodyText'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('bodyText') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+                                <div class="form-group {{ $errors->has('footerText') ? ' has-error' : '' }}">
+                                    <label>Footer Text</label>
+                                    <textarea type="text"  name="footerText"  class="form-control" id="footerText">{{ $templete->footerText }}</textarea>
+
+                                    @if ($errors->has('footerText'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('footerText') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+
+                                 <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Left Logo
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="llogo" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+                                 <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Middle Logo
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="mlogo" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Right Logo
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="rlogo" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+
+                                <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Left Signature
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="lsign" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+                                <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Middle Signature
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="msign" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+                                 <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Right Signature
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="rsign" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+                                 <div class="image-upload form-group">
+                                        <label class="control-label upperlabel">
+                                            Background Image
+                                            <span id="deliMG" onclick="cancelUploadMulti('fileMulti');" style="display: none;" class="myspanRemove">Remove</span>
+                                        </label>
+                                        <label class="btn btn-success btn-sm btn-block uploded-text" for="multiFileUp">Choose File
+                                        </label>
+                                        <input type="file" name="bgimg" class="file-upload form-control" id="multiFileUp">
+                                 <span class="text-danger"></span>
+                                </div>
+                                <div class="form-group{{ $errors->has('status') ? ' has-error' : '' }}">
+                                    <label for="status">@lang('Student Photo Position')</label>{!! Form::select('photo_position',studentPhoto(), $templete->photo_position, array('id' => 'photo_position', 'class' => 'form-control', 'placeholder' => trans('Choose'))) !!}
+                                    @if ($errors->has('photo_position'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('photo_position') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+                                <div class="form-group{{ $errors->has('info_position') ? ' has-error' : '' }}">
+                                    <label for="status">@lang('Student Informations Position')</label>{!! Form::select('info_position',infoPosition(), $templete->info_position, array('id' => 'info_position', 'class' => 'form-control', 'placeholder' => trans('Choose'))) !!}
+                                    @if ($errors->has('info_position'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('info_position') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Name
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_name == 1 ?'checked':'' }} id="is_name" name="is_name" value="1" />
+                                            <label for="is_name" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Father Name
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_fname == 1 ?'checked':'' }} id="is_fname" name="is_fname"  value="1" />
+                                            <label for="is_fname" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Mother Name
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_mname == 1 ?'checked':'' }}  id="is_mname" name="is_mname" value="1" />
+                                            <label for="is_mname" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        E-Mail
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_email == 1 ?'checked':'' }}  id="is_email" name="is_email"  value="1" />
+                                            <label for="is_email" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Phone
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_phone == 1 ?'checked':'' }} id="is_phone" name="is_phone"  value="1" />
+                                            <label for="is_phone" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Student Photo
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_photo == 1 ?'checked':'' }} id="is_photo" name="is_photo"  value="1" />
+                                            <label for="is_photo" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Address
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_address == 1 ?'checked':'' }} id="is_address" name="is_address"  value="1" />
+                                            <label for="is_address" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Admission ID
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_admission_id == 1 ?'checked':'' }} id="is_admission_id" name="is_admission_id"  value="1" />
+                                            <label for="is_admission_id" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Student ID
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_st_id == 1 ?'checked':'' }} id="is_st_id" name="is_st_id"  value="1" />
+                                            <label for="is_st_id" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Class
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_class == 1 ?'checked':'' }} id="is_class" name="is_class"  value="1" />
+                                            <label for="is_class" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Section
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_section == 1 ?'checked':'' }} id="is_section" name="is_section"  value="1" />
+                                            <label for="is_section" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Session
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->is_session == 1 ?'checked':'' }} id="is_session" name="is_session"  value="1" />
+                                            <label for="is_session" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Left Signature Title
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->lsign_title == 1 ?'checked':'' }} id="lsign_title" name="lsign_title"  value="1" />
+                                            <label for="lsign_title" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Middle Signature Title
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->msign_title == 1 ?'checked':'' }} id="msign_title" name="msign_title"  value=" 1" />
+                                            <label for="msign_title" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                       Right Signature Title
+                                        <div class="TriSea-technologies-Switch pull-right">
+                                            <input type="checkbox" {{ $templete->rsign_title == 1 ?'checked':'' }} id="rsign_title" name="rsign_title"  value="1" />
+                                            <label for="rsign_title" class="label-success"></label>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="form-group ">
+
+                                <label>Choose Page: </label>
+                                <label class="radio-inline" for="a4">
+                                    {{ Form::radio('page', 'a4', $templete->page == 'a4' ? 'true' : '', ['id'=>'a4'])}}
+                                    A4 Page
+                                </label>
+
+                                <label class="radio-inline" for="a5">
+                                    {{ Form::radio('page', 'a5', $templete->page == 'a5' ? 'true' : '', ['id'=>'a5'])}}
+                                    A5 Page
+                                </label>
+
+
+                                </div>
+                                        <div class="form-group{{ $errors->has('status') ? ' has-error' : '' }}">
+                                    <label for="status">* @lang('Status')</label>{!! Form::select('status',status(), $templete->status, array('id' => 'status', 'class' => 'form-control', 'placeholder' => trans('Choose'))) !!}
+                                    @if ($errors->has('status'))
+                                        <span class="help-block">
+                                    <strong>{{ $errors->first('status') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+
+                            </div><!-- /.box-body -->
+
+
+
+
+                              if(select.value==1){
+    document.getElementById('div1').style.display = "block";
+    document.getElementById('div2').style.display = "block";
+    document.getElementById('div4').style.display = "block";
+    document.getElementById('div5').style.display = "block";
+  
+    document.getElementById('div7').style.display = "block";
+    document.getElementById('div8').style.display = "block";
+    document.getElementById('div9').style.display = "block";
+    document.getElementById('div10').style.display = "block";
+    document.getElementById('div11').style.display = "block";
+    document.getElementById('div12').style.display = "block";
+    document.getElementById('div13').style.display = "block";
+    document.getElementById('div14').style.display = "block";
+    document.getElementById('div15').style.display = "block";
+    document.getElementById('div16').style.display = "block";
+    document.getElementById('div17').style.display = "block";
+    document.getElementById('div18').style.display = "block";
+    document.getElementById('div19').style.display = "block";
+    document.getElementById('div20').style.display = "block";
+    document.getElementById('div21').style.display = "block";
+    document.getElementById('div22').style.display = "block";
+   
+   } else if (select.value==2){
+    document.getElementById('div1').style.display = "block";
+    document.getElementById('div2').style.display = "block";
+    document.getElementById('div4').style.display = "block";
+    document.getElementById('div5').style.display = "block";
+    
+    document.getElementById('div7').style.display = "block";
+    document.getElementById('div8').style.display = "block";
+    document.getElementById('div9').style.display = "block";
+    document.getElementById('div10').style.display = "block";
+    document.getElementById('div11').style.display = "block";
+    document.getElementById('div12').style.display = "block";
+    document.getElementById('div13').style.display = "block";
+    document.getElementById('div14').style.display = "block";
+    document.getElementById('div15').style.display = "block";
+    document.getElementById('div16').style.display = "block";
+    document.getElementById('div17').style.display = "block";
+    document.getElementById('div18').style.display = "block";
+    document.getElementById('div19').style.display = "block";
+    document.getElementById('div20').style.display = "block";
+    document.getElementById('div21').style.display = "block";
+    document.getElementById('div22').style.display = "block";
+   }else if (select.value==3){
+    document.getElementById('div1').style.display = "block";
+    document.getElementById('div2').style.display = "block";
+    document.getElementById('div4').style.display = "block";
+    document.getElementById('div5').style.display = "block";
+    
+    document.getElementById('div7').style.display = "block";
+    document.getElementById('div8').style.display = "block";
+    document.getElementById('div9').style.display = "block";
+    document.getElementById('div10').style.display = "block";
+    document.getElementById('div11').style.display = "block";
+    document.getElementById('div12').style.display = "block";
+    document.getElementById('div13').style.display = "block";
+    document.getElementById('div14').style.display = "block";
+    document.getElementById('div15').style.display = "block";
+    document.getElementById('div16').style.display = "block";
+    document.getElementById('div17').style.display = "block";
+    document.getElementById('div18').style.display = "block";
+    document.getElementById('div19').style.display = "block";
+    document.getElementById('div20').style.display = "block";
+    document.getElementById('div21').style.display = "block";
+    document.getElementById('div22').style.display = "block";
+   }else if (select.value==4){
+    document.getElementById('div1').style.display = "block";
+    document.getElementById('div6').style.display = "block";
+    document.getElementById('div11').style.display = "block";
+    document.getElementById('div12').style.display = "block";
+    document.getElementById('div14').style.display = "block";
+    document.getElementById('div16').style.display = "block";
+    document.getElementById('div17').style.display = "block";
+    document.getElementById('div19').style.display = "block";
+  
+   }

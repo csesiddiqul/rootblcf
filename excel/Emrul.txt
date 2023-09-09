@@ -1,0 +1,10 @@
+ALTER TABLE `agents` ADD `shareOf` DOUBLE(8,2) NULL DEFAULT NULL AFTER `nid_url`;
+ALTER TABLE `school_payments` ADD `shareOf` DOUBLE(8,2) NULL DEFAULT NULL AFTER `transBy`;
+ALTER TABLE `school_payments` ADD `percentTk` DOUBLE(8,2) NULL DEFAULT NULL AFTER `shareOf`;
+ALTER TABLE `school_payments` ADD `pStatus` CHAR(1) NOT NULL DEFAULT '0' COMMENT ' 0=Unpaid,1=Paid to Agent' AFTER `percentTk`;
+ALTER TABLE `school_payments` ADD `tranCheque` VARCHAR(15) NULL DEFAULT NULL COMMENT 'Foqas to Agent Payment Number' AFTER `pStatus`, ADD `sNote` VARCHAR(200) NULL DEFAULT NULL COMMENT 'Tracking comment' AFTER `tranCheque`;
+ALTER TABLE `admissions` ADD `mark` FLOAT NULL DEFAULT NULL AFTER `roll`;
+ALTER TABLE `users` ADD `isSuper` CHAR(1) NOT NULL DEFAULT '0' COMMENT 'school_super_admin' AFTER `active`, ADD INDEX `school_super` (`isSuper`);
+ALTER TABLE `departments` ADD `status` TINYINT NOT NULL AFTER `department_name`;
+ALTER TABLE `admissions` CHANGE `status` `status` TINYINT(4) NULL DEFAULT '1' COMMENT '1=pending,2=approve,3=reject,4=paid,5=unpaid,6=promoted,7=not_promoted';
+ALTER TABLE `users` CHANGE `gender` `gender` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '1=Male;2=Female;3=Others';

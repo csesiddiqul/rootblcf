@@ -1,0 +1,137 @@
+.countdown-main {
+  text-align: center;
+  padding: 0px 0px 24px;
+  background: #4a9fd7; 
+  font-weight: lighter;
+  margin: 5px 0px 15px;
+}  
+.subs-container {  
+  background: #5f6368;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+} 
+.subs-container h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 0.7em;
+  color: #f8f8f8; 
+  width:  100%;
+}  
+.countdown {
+  display: flex;
+  margin-top: 10px;
+} 
+.countdown div {
+  position: relative;
+  width: 80px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #000000;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 0 0 6px #449ed7;
+} 
+.countdown div:before {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: #ffce00;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-shadow: 0 0 6px #ffce00;
+}  
+.countdown div#subsc-now {
+  top: 13px;
+  width: 160px; 
+  background: #ecf0f1; 
+  height: 30px;
+  text-shadow: none;
+}  
+div.visi-xs {
+  margin: 10px 0px 0px;
+  width: 160px; 
+  background: #ecf0f1; 
+  height: 30px;
+  text-shadow: none;
+}   
+.countdown div#subsc-now .btn, .visi-xs .btn {
+	height: 30px;
+	padding: 0px 5px;
+	line-height: 28px;
+	color: #333;  
+}  
+.countdown div#subsc-now .btn:hover, .visi-xs .btn:hover { 
+	color: #337ab7; 
+}
+
+.countdown div#subsc-now:before { 
+	display: none;
+} 
+.countdown div#day:before {
+  content: "Days";
+} 
+.countdown div#hour:before {
+  content: "Hours";
+} 
+.countdown div#minute:before {
+  content: "Minutes";
+} 
+.countdown div#second:before {
+  content: "Seconds";
+} 
+.countdown div#day-not:before {
+  content: "Days";
+} 
+.countdown div#hour-not:before {
+  content: "Hours";
+} 
+.countdown div#minute-not:before {
+  content: "Minutes";
+} 
+.countdown div#second-not:before {
+  content: "Seconds";
+} 
+.subval, .subvals {    
+  font-size: 30px!important;
+  line-height: 30px; 
+  text-shadow: 0 0 6px #000;
+}
+.subvals  {    
+  color: #ff0000!important; 
+}
+
+
+
+@media (min-width:320px) and (max-width:425px){ 
+	.countdown { 
+	  margin-top: 10px;
+	  width: 100%;
+	} 
+	.countdown div#subsc-now {
+		display: none;
+	}
+	.countdown div {
+		margin: 0px .5px;
+	}
+	.countdown div#day {
+		margin-left: 0px;
+	}
+	.countdown div#second {
+		margin-right: 0px;
+	}
+	.subs-container h2 {
+		line-height: 35px;
+		margin: 10px 0px 5px;
+	}
+}

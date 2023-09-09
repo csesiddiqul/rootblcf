@@ -1,0 +1,8 @@
+STP == Staff Teacher Profile
+SP = Student Profile
+AP = Admin Profile
+SC = School Committee
+MS= Main Slider
+CI= Content Image 
+GP= Gallery Photo
+TP= Testimonial Photo

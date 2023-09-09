@@ -1,0 +1,5 @@
+ALTER TABLE `settings` ADD `slider_notice` TINYINT NOT NULL DEFAULT '1' COMMENT '1=only slider,2=slider & notice' AFTER `home_atitle`;
+
+
+ALTER TABLE `settings` ADD `instruction_title` VARCHAR(191) NULL DEFAULT NULL AFTER `slider_notice`, ADD `form_link` VARCHAR(191) NULL DEFAULT NULL AFTER `instruction_title`, ADD `instruction_description` LONGTEXT NULL DEFAULT NULL AFTER `form_link`;
+

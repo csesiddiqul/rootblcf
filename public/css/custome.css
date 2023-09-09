@@ -1,0 +1,423 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+#registry .btn {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 0 5px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid #ccc;
+  line-height: 20px;
+}
+
+#registry .btn::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#registry .btn-social:hover::after, #registry .btn-back:hover::after {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+#registry .btn-login:hover::after {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+#registry .btn-next:hover::after {
+  background-color: #3e35357a!important;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2)!important;
+}
+
+#registry .btn-social {
+  padding-left: 64px;
+  position: relative;
+  z-index: 1;
+}
+
+#registry .btn-social .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  line-height: 32px;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+#registry .btn-facebook {
+  background-color: #3b5999;
+}
+
+#registry .btn-back {
+  background-color: #55acee;
+}
+#registry .btn-login {
+  background-color: #282828;
+}
+
+#registry .btn-google {
+  background-color: #dd4b39;
+}
+
+#registry .btn-behance {
+  background-color: #131418;
+}
+
+#registry .form fieldset {
+  border: none;
+  padding: 0;
+  margin: 10px 0;
+  position: relative;
+}
+
+#registry .form fieldset input, #registry .form fieldset select, #registry .form fieldset textarea{
+  width: 100%;
+  height: 36px;
+  color: #282828;
+  padding: 5px 15px;
+  font-size: 14px;
+  outline: none !important;
+  border: 1px solid #4A9FD7; 
+  vertical-align: middle; 
+  -webkit-appearance: none;  
+  margin-bottom: 10px;  
+  box-shadow: none!important; 
+} 
+
+#registry .form fieldset select {
+  cursor: pointer;
+}
+fieldset div.iti {
+  width: 100%;
+}
+input#phone_number {
+  padding-left: 52px!important;
+  width: 100%!important;
+}
+
+.label-helper {
+  position: absolute;
+  opacity: 0;
+  transition: .3s bottom, .3s opacity;
+  bottom: 0;
+  left: 0;
+  z-index: 1; 
+  margin: 0px; 
+}
+
+.input-text:focus + .label-helper, .input-text:focus:invalid + .label-helper {
+  bottom: 96%; 
+  font-size: 14px;
+  line-height: 1;
+  opacity: 1;
+  padding: 4px 4px 4px 0px; 
+}
+.input-text:focus:invalid {
+  border: 1px solid #f00!important; 
+}
+.input-text:invalid + .label-helper::before {
+  color: #f00;
+  content: "*"; 
+  font-size: 14px;
+  line-height: 1px; 
+}
+
+#registry .form button {
+  width: 100%;
+  outline: none !important;
+  background: linear-gradient(-5deg, #282828, #282828);
+  border: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  box-shadow: 0 3px 0 rgba(115, 136, 89, 0.2);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#registry.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+}
+
+#registry .signup-connect, #registry .signup-classic {
+  width: 50%;
+  padding: 30px;
+}
+
+#registry .signup-connect {
+  background: linear-gradient(134deg, #4A9FD7, #4A9FD7);
+  color: white;
+}
+#registry .signup-connect h1{
+  font-family: Schoolbell;
+  text-align: center;
+  margin-top: 30%;
+}
+
+#registry .signup-classic h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-family: Schoolbell;
+} 
+fieldset span.help-block {
+  margin: -7px 0px 7px;
+  font-size: 12px; 
+  color: red;
+}
+div.forSlogo {
+  width: 50%;
+  margin: 28px auto;
+  text-align: center !important;
+}
+img.logoSchool {
+  max-width: 100%;  
+  height: auto;
+}
+a#bottomback {
+  display: none!important;
+}
+
+.brdiv {
+  clear: both;
+  height: 5px;
+}
+.clearfix {
+  clear: both; 
+}
+.clearfixh {
+  clear: both; 
+  height: 53px;
+}
+.text-left p {
+  margin-bottom: 5px;
+}
+#regForm .progressbar {
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+#regForm .progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0e2e44;
+}
+#regForm .progressbar li:nth-child(1):before {
+  margin-left: 0px;
+}
+#regForm .progressbar li:nth-child(2):before {
+  margin-left: 25%;
+}
+#regForm .progressbar li:nth-child(3):before {
+  margin-right: 25%;
+}
+#regForm .progressbar li:nth-child(4):before {
+  margin-right: 0px;
+} 
+#regForm .progressbar li:nth-child(2):after { 
+  left: -71%;
+} 
+#regForm .progressbar li:nth-child(4):after { 
+  left: -29%;
+}
+#regForm h2 {
+  margin-bottom: 20px!important;
+}
+#regForm .progressbar li:before {
+  width: 24px;
+  height: 24px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 21px;
+  border: 2px solid #0e2e44;
+  display: block;
+  text-align: center;
+  margin: 0 auto 12px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+#regForm .progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  font-weight: bold;
+  position: absolute;
+  background-color: #0e2e44;
+  top: 11px;
+  left: -50%;
+  z-index: -1;
+}
+#regForm .progressbar li:first-child:after {
+  content: none;
+}
+#regForm .progressbar li.active {
+  color: #4A9FD7;
+}
+#regForm .progressbar li.active:before {
+  border-color: #4A9FD7;
+}
+#regForm .progressbar li.active + li:after {
+  background-color: #4A9FD7;
+}
+
+#regForm .progressbar li.pre-active {
+  color: #4A9FD7;
+}
+#regForm .progressbar li.pre-active:before {
+  border-color: #4A9FD7;
+}
+#regForm .progressbar li.pre-active + li:after {
+  background: linear-gradient(90deg, #4A9FD7, #0e2e44);
+}
+#regForm .alert-success {
+  background-color: #4A9FD7;
+  border-color: #4A9FD7;
+  color: #ffffff;
+} 
+#regForm .alert {
+  padding: 3px 8px;
+  margin-bottom: 15px; 
+  border-radius: 0px;
+  line-height: 16px;
+}
+#regForm .alert-dismissible .close { 
+  top: -1px;
+  right: -4px; 
+}
+.btn-next {
+  background-color: #282828!important;
+}
+
+.name-title {
+  margin-top: 25px!important;
+}
+
+.stripe-button-el {
+  
+}
+.stripe-button-el span {
+  background: transparent!important;
+  height: 32px;
+  box-shadow: none;
+}
+.alert table {
+  width: 100%;
+}
+.alert caption {
+  color: #FFF;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.alert table>tbody>tr>td {
+  color: #FFF;
+  padding-bottom: 5px;
+}
+.alert table>tbody>tr>td:last-child {
+  text-align: right;
+}
+#preview_cry {
+  display: none; 
+  width: 40%;
+  margin: 5px auto 0px;
+}
+#preview_crys {
+  display: block; 
+  width: 40%;
+  margin: 5px auto 0px;
+}
+.has-error {
+  border: 1px solid #e74c3c!important;
+}
+.validForm #regbtn {
+  disabled: disabled;
+}
+.alert-warning h5 {
+  line-height: 20px;
+}
+
+@media(min-width:320px) and (max-width:425px){
+  #registry.signup {
+    width: 100%;
+    display: inline-block;
+    top: 0; 
+    left: 0; 
+    transform: none;  
+    border-radius: 0px;
+  }
+  #registry .signup-connect {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 0px;
+    clear: both;
+  }
+  #registry .signup-classic {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 0px;
+    clear: both;
+  }
+  #registry .signup-connect h1 { 
+    margin: 25px 0px; 
+    font-size: 25px;
+  }
+  #registry .signup-classic h2 {
+    margin: 15px 0px 24px 0px; 
+  }
+  div.forSlogo {
+    width: 30%; 
+    margin: 25px auto;
+  }
+  a#topback, .clearfixh {
+    display: none!important;
+  }
+  a#bottomback {
+    display: block!important;
+  }
+}
+
+
+
+@media(min-width: 321px) and (max-width: 375px) {
+
+  }
+@media(min-width: 376px) and (max-width: 425px) {
+
+  }
+
+

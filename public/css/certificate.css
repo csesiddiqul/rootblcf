@@ -1,0 +1,32 @@
+	.design{
+    position:relative !important;
+    
+}
+.text-center{
+	text-align:center !important;
+}
+
+.centered {
+    position: absolute !important;
+    
+    top: 5% !important;
+    
+    /*transform: translate(-30%, -50%); */
+}
+
+.teacherl{
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.teacherR{
+	margin-right: 100px;
+	margin-top: 20px;
+}
+
+.p-5{
+	padding: 5px !important;
+}
+
+.l-hight25{
+	line-height: 25px!important;
+}

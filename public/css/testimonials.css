@@ -1,0 +1,139 @@
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Foqas Academy | Responsive Education Template
+* Author : Foqas
+* Author URI : http://www.foqas.org/
+* Programmer : Shihab Uddin
+* -----------------------------------------------------------------------------
+*
+**/
+.centered {
+    position: absolute !important;
+    top: 5% !important;
+    /*transform: translate(-30%, -50%); */
+}
+
+.spn {
+    border-bottom: 1px dashed #000000;
+    padding-bottom: 2px;
+}
+
+.two-div {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    margin-top: 5px !important;
+}
+
+.p-for {
+    margin-top: 35px;
+}
+
+.pl-0 {
+    padding-left: 0px !important;
+}
+
+/*.firstDiv1{
+    width: 78% !important;
+}*/
+.img1 img {
+    width: 29% !important;
+    float: right !important;
+}
+
+.div2 {
+    float: left;
+    margin-top: 25px;
+}
+
+.thirdDiv3 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+}
+
+.forthDiv4 {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+.fifthDiv5 {
+    margin-top: 26px !important;
+    margin-left: 26px !important;
+}
+
+.sixthDiv6 {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.seventhDiv7 {
+    margin-top: 26px !important;
+    margin-right: 26px !important;
+}
+
+.eighthDiv8 {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.ninethDiv9 {
+    font-size: 30px !important;
+    font-weight: bold !important;
+    /*margin-top: 20px !important;*/
+}
+
+.design2 {
+    width: 100%;
+
+}
+
+.tbl .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none !important;
+}
+
+@page {
+    margin: 0;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+        color-adjust: exact !important; /*Firefox*/
+    }
+
+    .div2 {
+        margin-top: 0
+    }
+
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+
+    .col-md-8 {
+        width: 66.66666667%;
+    }
+
+    .tbl .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        background: none !important;
+    }
+
+    .ninethDiv9 {
+        margin-top: 0px;
+    !important;
+    }
+
+    .p-for {
+        margin-top: 10px !important;
+    }
+
+    .teacherR {
+        margin-top: 50px !important;
+    }
+
+    .seventhDiv7 {
+        margin-top: 10px !important;
+    }
+}

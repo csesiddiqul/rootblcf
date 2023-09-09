@@ -1,0 +1,18 @@
+@page {
+    size: a5 landscape !important;
+    margin: 0;
+}
+
+@media print{
+
+
+.table td, .table th {
+    padding: 0 !important;
+  
+}
+.admit-card {
+    border: none !important;
+    padding: 10px !important;
+    /*margin: 20px 0 !important;*/
+}
+}

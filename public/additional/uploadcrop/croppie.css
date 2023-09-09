@@ -1,0 +1,93 @@
+.modal-body {
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 15px 15px 0px;
+    position: relative;
+} 
+.modal-content {
+    box-shadow: none;
+}
+.modal-content {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: none;
+    border-radius: 0px;
+    position: relative;
+}
+.modal-footer {
+    background-color: #fff;
+    border-radius:0px;
+    border-top: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-right: 0px;
+    padding: 0px 15px 20px;
+    text-align: left; 
+}
+.crop_can {
+    background-color: #282828;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 3px 10px 4px;
+}
+.crop_can:hover, .crop_image:hover {
+    color: #CCCCCC;
+}
+.crop_image{
+    background-color: #4a9fd7;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 3px 13px 4px;
+}
+.image-upload>input {
+  display: none;
+}
+.image-upload label img {
+    border: 1px dashed #00a8f2;
+    cursor: pointer;
+} 
+#institute-pic {
+    height: 45px;
+    cursor: pointer; 
+} 
+span#remove1 {
+    cursor: pointer;
+}
+#profile-pic {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+} 
+button.rotate {
+
+}
+#opportunity-pic {
+    width: 100%;
+}
+#img img, #remove2 img {
+    height: 20px;
+    width: 20px;
+}
+#deliMG {
+    cursor: pointer;
+}
+label#deliMG2 {
+    cursor: pointer;
+}
+.width-100px {
+    width: 110px!important;
+    margin: 0px;
+}
+#width-crop, #height-crop, #type-crop, #table_name, #table_id, #table_field, .span-none span {
+    display: none;
+}
+.remove-div {
+    width: 103.5px;
+    height: auto;
+}
+.remove-div .btn-group {
+    margin-top: -2px;
+}
+.remove-div .btn-sm{
+    padding: 0px 5px;
+}

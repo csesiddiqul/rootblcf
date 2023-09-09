@@ -1,0 +1,240 @@
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Foqas Academy | Responsive Education Template
+* Author : Foqas
+* Author URI : http://www.foqas.org/
+* Programmer : Shihab Uddin
+* -----------------------------------------------------------------------------
+*
+**/
+@page {
+
+    size: portrait;
+    margin: 0cm !important;
+}
+
+@media print {
+    /*Seat Plan Star*/
+    .margin-top {
+        margin-top: 20px !important;
+    }
+
+    .sp-card {
+        border: 1px dashed #000000 !important;
+        padding: 3px !important;
+
+    }
+
+    .m-card {
+        float: left !important;
+        margin-bottom: 15px !important;
+        padding-left: 0px !important !important;
+    }
+
+    .hding-one {
+        /*font-family: fantasy;*/
+        font-weight: 600 !important;
+        letter-spacing: -0.5 !important;
+        text-align: center !important;
+        margin-bottom: 5px !important;
+        margin-top: 5px !important;
+        font-size: 14px  !important;
+    }
+
+    .hding-two {
+        font-family: -webkit-body !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        margin-bottom: 5px !important;
+        margin-top: 1px !important;
+        font-weight: 400 !important;
+    }
+
+    .hding-three {
+        text-align: center !important;
+        margin-bottom: 5px !important;
+        margin-top: 1px !important;
+        font-size: 22px !important;
+    }
+
+    .sp-card table tr td:nth-child(1) {
+        width: 40% !important;
+        padding-left: 7px !important;
+        padding-right: 4px !important;
+        vertical-align: top !important;
+    }
+
+    .sp-card table tr td {
+        font-size: 14px !important;
+    }
+
+    .table-bordered, td, th {
+        border-radius: 0 !important;
+    }
+
+    td, th {
+        padding: 0 !important;
+    }
+
+    .sp-card table tr td:nth-child(2) {
+        width: 55% !important;
+        vertical-align: top !important;
+    }
+
+    .sp-card table tr td:nth-child(3) {
+        width: 30% !important;
+        text-align: center !important;
+    }
+
+    .c-roll {
+        font-family: fantasy;
+        font-size: 24px !important;
+    }
+
+    .n-number {
+        margin: 0 auto !important;
+        line-height: 50px !important;
+        height: 50px !important;
+        width: 50px !important;
+        border-radius: 50% !important;
+        border: 1px solid #000 !important;
+    }
+
+    .pd-top {
+        padding-top: 15px !important;
+    }
+
+    /*Seat Plan End*/
+    .two-div {
+        width: 100% !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        margin-top: 5px !important;
+    }
+
+    .design {
+        position: relative !important;
+
+    }
+
+    .firstDiv1 {
+        width: 100% !important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .centered {
+        width: 100% !important;
+        clear: both !important;
+        position: absolute !important;
+        top: 5% !important;
+
+        /*transform: translate(-30%, -50%); */
+    }
+
+    .firstDiv1 {
+        width: 100% !important;
+    }
+
+    .teacherl {
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    .teacherR {
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+
+    .p-5 {
+        padding: 5px !important;
+    }
+
+    .l-hight25 {
+        line-height: 25px !important;
+    }
+
+    .spn {
+        border-bottom: 1px dashed #000000;
+        padding-bottom: 2px;
+    }
+
+    /*.two-div {
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+        margin-top: 5px!important;
+    }*/
+    .tbl .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border-top: none !important;
+    }
+
+    .f-size16 {
+        font-size: 16px !important;
+    }
+
+    .p-for {
+        margin-top: 10px !important;
+
+
+    }
+
+    .pl-0 {
+        padding-left: 0px !important;
+    }
+
+    .firstDiv1 {
+        width: 78% !important;
+    }
+
+    .div2 {
+        float: left !important;
+        margin-top: 15px !important;
+    }
+
+    .thirdDiv3 {
+        font-size: 20px !important;
+        font-weight: bold !important;
+        margin-top: 0px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .forthDiv4 {
+        font-size: 18px !important;
+        font-weight: 400 !important;
+    }
+
+    .fifthDiv5 {
+        margin-top: 26px !important;
+        margin-left: 26px !important;
+    }
+
+    .sixthDiv6 {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    .seventhDiv7 {
+        margin-top: 26px !important;
+        margin-right: 26px !important;
+    }
+
+    .eighthDiv8 {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    .ninethDiv9 {
+        font-size: 30px !important;
+        font-weight: bold !important;
+        margin-top: 20px !important;
+    }
+
+    .design img {
+        width: 100% !important;
+    }
+
+}

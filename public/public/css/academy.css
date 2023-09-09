@@ -1,0 +1,241 @@
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Foqas Academy | Responsive Education Template
+* Author : Foqas
+* Author URI : http://www.foqas.org/
+* Programmer : Shihab Uddin
+* -----------------------------------------------------------------------------
+*
+**/
+@media print {
+    #btnPrint {
+        display: none !important;
+    }
+
+    .table thead th {
+        vertical-align: bottom !important;
+        border-bottom: none !important;
+    }
+
+
+    .profile_image {
+        border: 1px solid #000 !important;
+        padding: 5px !important;
+    }
+
+    /*  .BoxA{
+      background-color: #ccc !important;
+  }*/
+    .padding {
+        padding: 15px !important;
+    }
+
+    .sign {
+        border-top: 1px solid #000 !important;
+        margin-right: 70px !important;
+        width: 170px !important;
+        text-align: center !important;
+    }
+
+    .signature {
+        margin-top: 60px !important;
+    }
+
+    .ftr {
+        text-align: center !important;
+    }
+}
+
+.height-30 {
+    height: 30px;
+}
+
+.swal2-height-auto {
+    padding-right: 0px !important;
+    overflow-x: hidden;
+}
+
+.swal2-popup.swal2-toast.swal2-show {
+    padding: .625em !important;
+    box-shadow: none !important;
+    border: .5px solid #f3eded;
+}
+
+.swal2-title {
+    font-size: 1em !important;
+}
+
+.divide .sec-title {
+    margin-bottom: 10px !important;
+    padding-bottom: 5px;
+}
+
+.divide .choose-img {
+    float: right;
+    padding: 0 0 0 25px
+}
+
+.org-title {
+    margin-bottom: 0px;
+}
+
+.bg-black {
+    background: #000000;
+}
+
+.dece-head div p, .dece-head div h6 {
+    margin: 0 0 10px
+}
+
+.dece-head div h6 {
+    padding-top: 10px;
+}
+
+.dece-head div p a {
+    float: right
+}
+
+.org-des span {
+    font-size: 24px;
+}
+
+.org-des p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.has-error {
+    border: 1px solid #f12323;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+}
+
+div.content-class-custom input, div.content-class-custom select {
+    margin: 0px auto;
+    height: 40px;
+    width: 50%;
+}
+
+h2.title-class-custom {
+    color: #4a9fd7;
+    font-size: 24px;
+    margin-bottom: .40em;
+}
+
+div.actions-class-custom {
+    margin-top: .75em;
+}
+
+div.actions-class-custom button {
+    padding: .412em 1.1em;
+}
+
+button.confirm-button-custom {
+    background-color: #4a9fd7 !important;
+}
+
+button.cancel-button-custom {
+    background-color: #282828 !important;
+}
+
+div.swal2-validation-message {
+    padding-bottom: 0px;
+    background: none;
+    font-size: 16px;
+    color: #b72424;
+    margin-bottom: -5px;
+}
+
+.help-block, .error {
+    color: #b72424 !important;
+}
+
+.form-control.error {
+    border: 1px solid #b72424;
+}
+
+.table td, .table th {
+
+    border-top: none !important;
+}
+
+span.marker {
+    background: #ffff00;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 668px) {
+    .org-des span {
+        float: none !important;
+    }
+
+    .m-mt-2 {
+        margin-top: 2rem;
+    }
+}
+
+div.swal2-validation-message::before {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    line-height: 18px;
+    margin: -1px 5px 0px 0px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    h2.title-class-custom {
+        font-size: 16px;
+    }
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-position: 0 -15px !important;
+    transition: all .15s;
+    background-image: linear-gradient(to bottom, #4a9fd7 0%, #4a9fd7 100%);
+    background-repeat: repeat-x;
+}
+
+#home-slider {
+    padding: 16px 15px;
+}
+
+.watermark {
+    position: fixed;
+    bottom: 50%;
+    right: 42%;
+    opacity: 0.1;
+    z-index: 99;
+    color: white;
+}
